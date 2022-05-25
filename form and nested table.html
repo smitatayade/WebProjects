@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>FORMS</title> 
+    <style>
+    #tab{
+        background-color: brown;
+        color: chartreuse;
+        float:center;
+        font-size: 40px;
+    }
+    tr th{
+        background-color: cyan;
+    }
+    tbody:hover{
+        cursor:grab;
+    }
+    tbody{
+        background-color: rgb(0, 195, 255);
+    }
+    </style>       
+    </head>
+    <body>
+        <form>
+            name:
+            <input type="text" name="username" placeholder="enter your name" required pattern="[a-Z0-9]{4,10}"><br><br>
+            email:
+            <input type="email" name="email" autofocus><br><br>
+            upload file:
+            <input type="file" name="file" value="file"><br><br>
+            date:
+            <input type="date" name="date" ><br><br>
+            age:
+            <input type="number" name="number" min="2" max="7"><br><br>
+            password:
+            <input type="password" name="password" ><br><br>
+            <input type="button" value="submit"><br><br>
+            <input type="button" name="reset" value="reset">
+        </form>
+
+
+        <table  height="200" width="1500">
+            <thead>
+                <tr>
+                    <th>JBL speakers</th>
+                    <th>jbl speakers</th>
+                    <th>jbl speakers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td align="center"><img src="../assets/person.jpg" height="100" width="300"></td>
+                <td align="center"><img src="../assets/elon.jpg" height="100" width="300"></td>
+                <td align="center"><img src="../assets/person.jpg" height="100" width="300"></td>
+                
+            </tbody>
+            <tfoot>
+            <th>price:</th>
+            <th>price:</th>
+            <th>price:</th>
+           </tfoot> 
+        </table>
+
+        
+        <table  id="tab" height="200" width="1500">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>75%OFF</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+        <table  height="200" width="1500">
+            <thead>
+                <tr>
+                    <th>JBL speakers</th>
+                    <th>jbl speakers</th>
+                    <th>jbl speakers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td align="center"><img src="../assets/person.jpg" height="100" width="300"></td>
+                <td align="center"><img src="../assets/elon.jpg" height="100" width="300"></td>
+                <td align="center"><img src="../assets/person.jpg" height="100" width="300"></td>
+                
+            </tbody>
+            <tfoot>
+            <th>price:</th>
+            <th>price:</th>
+            <th>price:</th>
+           </tfoot> 
+        </table>
+    </body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MEDIA TOOLBAR</title>
+        <link rel="stylesheet" href="../fonts/css/all.css">
+        <style>
+           
+           
+            @media (orientation:landscape){
+                #nav{
+                    display:flex;
+                    list-style: none;
+                }
+                #nav li{
+                    display:flex;
+                    margin-right: 40px;
+                    border:2px solid;
+                    border-radius: 10px;
+                    padding:10px;
+                    font-weight: bold;
+                    background-color: yellow;   
+                }
+            }
+            @media (orientation:portrait){
+            #nav li{
+                list-style: none;
+                border-radius: 15px;
+                padding:5px;
+                background-color: pink; 
+                color:white;
+                margin-right:250px; 
+                margin-bottom: 40px;
+                width:100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <ol id="nav">
+            <li class="fa fa-home">HOME</li>
+            <li class="fas fa-map-marker-alt">LOCATION</li>
+            <li class="fas fa-address-card">CONTACT </li>
+        </ol>
+      
+    </body>
+</html>

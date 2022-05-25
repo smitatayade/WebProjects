@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition</title>
+        <style>
+            .box{
+                width:50px;
+                height:40px;
+                background-color:red;
+                transition-duration:2s;
+                transition-timing-function: steps(5);
+            }
+            .box:hover{
+                width:900px;
+                transition-duration: 4s;
+                background-color: yellow;
+                transition-delay: 3s;
+                transition-timing-function: steps(10);
+            }
+            .box1{
+                width:50px;
+                height:200px;
+                transition-duration:2s;
+                transition-timing-function: steps(5);
+            }
+            .box1:hover{
+                width:900px;
+                transition-duration: 4s;
+                transition-timing-function: steps(10);
+            }
+            .container{
+                overflow:hidden;
+            }
+            @keyframes street{
+                from{
+                    margin-left: 100%;
+                }
+                50%{
+                    transform:scale(2);
+                }
+                80%{
+                    transform:scale(1)
+                }
+                to{
+                    margin-bottom: 0%;
+                    transform:scale(1);
+                }
+            }
+            h2{
+                animation-name:street;
+                animation-duration: 5s;
+                animation-iteration-count:infinite;
+                animation-direction: alternate;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="box">
+
+        </div>
+        <img src="../assets/street1.jpg" class="box1">
+        <div class="container">
+            <h2>CSS Animation</h2>
+        </div>
+       
+    </body>
+</html>
